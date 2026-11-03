@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #0d0f14;
+  color: #f8fafc;
+}
+
+body {
+  background-image: radial-gradient(
+    ellipse at top,
+    rgba(22, 36, 77, 0.55),
+    transparent 60%
+  );
+  background-attachment: fixed;
+}
+
+::selection {
+  background: #16244d;
+  color: #fff;
+}
