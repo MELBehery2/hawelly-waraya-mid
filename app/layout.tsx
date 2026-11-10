@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Inter } from "next/font/google";
 import { FileText, FileImage, Facebook, Instagram, Linkedin, ShieldCheck } from "lucide-react";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -124,6 +125,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+	<Analytics />
       </body>
     </html>
   );
